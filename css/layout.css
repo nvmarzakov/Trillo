@@ -7,6 +7,14 @@
     min-height: 50rem;
 }
 
+@media only screen and (max-width: 1200px) {
+    .container-flex {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
 .header {
     font-size: 1.4rem;
     height: 7rem;
@@ -18,8 +26,22 @@
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 500px) {
+    .header {
+        flex-wrap: wrap;
+        align-content: space-around;
+        height: 11rem;
+    }
+}
+
 .content {
     display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
 }
 
 .sidebar {
@@ -45,12 +67,38 @@
     border-bottom: var(--line);
 }
 
+@media only screen and (max-width: 900px) {
+    .detail {
+        padding: 2rem; 
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .detail {
+        flex-direction: column;
+    }
+}
+
 .description {
     background-color: #fff;
     box-shadow: var(--shadow-light);
     padding: 3rem;
     flex: 0 0 60%;
     margin-right: 4.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .description {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .description {
+        flex-direction: column;
+    }
 }
 
 .user-reviews {

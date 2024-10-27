@@ -35,6 +35,12 @@ html {
     font-size: 62.5%; /* 1rem = 10px */
 }
 
+@media only screen and (max-width: 68.75em) {
+    html {
+        font-size: 50%; /* 1rem = 9px */
+    }
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
